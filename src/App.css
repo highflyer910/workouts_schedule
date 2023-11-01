@@ -46,6 +46,7 @@ main {
   main .workout-main {
     grid-column: 1/-1;
   }
+
 }
 @media (min-width: 1000px) {
   main {
@@ -164,4 +165,28 @@ h1 {
   font-weight: bold;
   margin: 0 0.5rem;
 }
+
+@media (max-width: 414px) {
+  .title {
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .title h3 {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust the font size for the title */
+    text-align: center;
+  }
+
+  .svgs {
+    height: 150px; /* Adjust the height for the SVG */
+    width: 100%;
+    margin: 1rem 0; /* Add some margin for spacing */
+  }
+}
+
 
