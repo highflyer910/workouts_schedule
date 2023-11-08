@@ -14,7 +14,7 @@ const App = () => (
   </main>
   <footer>
     <div className="footer">
-      <p>© Made with ❤ by<a href="https://github.com/highflyer910" target="_blank" rel="noreferrer">Thea</a></p>
+      <p>© Made with ❤ by<a href="https://github.com/highflyer910/workouts_schedule" target="_blank" rel="noreferrer">Thea</a></p>
     </div>
     </footer>
 </div>
