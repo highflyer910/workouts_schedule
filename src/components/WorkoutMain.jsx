@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import './../App.css';
 
 const schedule = [
-  {
+{
     day: 1,
     videos: [
         { link: "https://www.youtube.com/watch?v=3K-0JpiJu-o&ab_channel=MimiKuo-Deemer", image: "v1698754006/7_kbkv7o.jpg" },
@@ -44,8 +44,18 @@ const schedule = [
         { link: "https://www.youtube.com/watch?v=I9nG-G4B5Bs&ab_channel=ChloeTing", image: "v1698754006/6_fdimtx.jpg" },
     ]
 },
-    //... your schedule array
+
 ];
+
+const daysOfWeek = {
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday"
+};
+
 
 const WorkoutMain = () => {
     const scheduleListRef = useRef(null);
@@ -71,9 +81,11 @@ const WorkoutMain = () => {
                     </a>
                 `).join('');
     
+                const dayName = daysOfWeek[day.day];
+    
                 const dayHTML = `
                     <div class='js-day'>
-                        <div class='workout__info'>${videoCount} ${grammar}</div>
+                        <div class='workout__info'>${dayName} - ${videoCount} ${grammar}</div>
                         <div class='workout__links'>${videoLinks}</div>
                     </div>
                 `;
@@ -82,6 +94,7 @@ const WorkoutMain = () => {
             }
         });
     }
+    
     
 
     return (
