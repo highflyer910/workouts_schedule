@@ -5,8 +5,8 @@ const schedule = [
 {
     day: 1,
     videos: [
-        { link: "https://www.youtube.com/watch?v=j64BBgBGNIU&ab_channel=ChloeTing", image: "v1698754006/5_uvzaxn.jpg" },
-        { link: "https://www.youtube.com/watch?v=I9nG-G4B5Bs&ab_channel=ChloeTing", image: "v1698754006/6_fdimtx.jpg" },
+        { link: "https://www.youtube.com/watch?v=_xrAGY9ST4g&ab_channel=ZannavanDijk", image: "v1698754006/5_uvzaxn.jpg" },
+        { link: "https://www.youtube.com/watch?v=9qqnYOcSpY8&ab_channel=HeatherRobertson", image: "v1698754006/6_fdimtx.jpg" },
     ]
 },
 {
@@ -19,8 +19,8 @@ const schedule = [
 {
     day: 3,
     videos: [
-        { link: "https://www.youtube.com/watch?v=2pLT-olgUJs&ab_channel=ChloeTing", image: "v1698754006/4_zpuut6.jpg"},
-        { link: "https://www.youtube.com/watch?v=I9nG-G4B5Bs&ab_channel=ChloeTing", image: "v1698754006/6_fdimtx.jpg" },
+        { link: "https://www.youtube.com/watch?v=fjWp8iazB9I&ab_channel=CHRISTINADORNER", image: "v1698754006/4_zpuut6.jpg"},
+        { link: "https://www.youtube.com/watch?v=igtL2m8oH2I&ab_channel=fitbymik", image: "v1698754006/3_m7aufm.jpg" },
     ]
 },
 {
@@ -33,8 +33,8 @@ const schedule = [
 {
     day: 5,
     videos: [
-        { link: "https://www.youtube.com/watch?v=j64BBgBGNIU&ab_channel=ChloeTing", image: "v1698754006/5_uvzaxn.jpg" },
-        { link: "https://www.youtube.com/watch?v=I9nG-G4B5Bs&ab_channel=ChloeTing", image: "v1698754006/6_fdimtx.jpg" },
+        { link: "https://www.youtube.com/watch?v=j64BBgBGNIU&ab_channel=ChloeTing", image: "v1707495631/9_wcmrff.jpg" },
+        { link: "https://www.youtube.com/watch?v=I9nG-G4B5Bs&ab_channel=ChloeTing", image: "v1707495132/8_dwlzvy.jpg" },
     ]
 },
 {
