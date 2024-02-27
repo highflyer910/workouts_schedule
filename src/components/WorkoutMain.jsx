@@ -6,7 +6,7 @@ const schedule = [
     day: 1,
     videos: [
         { link: "https://www.youtube.com/watch?v=_xrAGY9ST4g&ab_channel=ZannavanDijk", image: "v1698754006/5_uvzaxn.jpg" },
-        { link: "https://www.youtube.com/watch?v=9qqnYOcSpY8&ab_channel=HeatherRobertson", image: "v1698754006/6_fdimtx.jpg" },
+        { link: "https://www.youtube.com/watch?v=jtDp6C9zKzw&ab_channel=ZannavanDijk", image: "v1698754006/6_fdimtx.jpg" },
     ]
 },
 {
