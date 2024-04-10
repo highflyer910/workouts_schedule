@@ -5,7 +5,7 @@ const schedule = [
 {
     day: 1,
     videos: [
-        { link: "https://www.youtube.com/watch?v=_xrAGY9ST4g&ab_channel=ZannavanDijk", image: "v1698754006/5_uvzaxn.jpg" },
+        { link: "https://www.youtube.com/watch?v=_xrAGY9ST4g&ab_channel=ZannavanDijk", image: "aaa.png" },
         { link: "https://www.youtube.com/watch?v=jtDp6C9zKzw&ab_channel=ZannavanDijk", image: "v1698754006/6_fdimtx.jpg" },
     ]
 },
@@ -78,7 +78,7 @@ const WorkoutMain = () => {
     
                 const videoLinks = videos.map(video => `
                     <a href="${video.link}" target="_blank">
-                        <img src="https://res.cloudinary.com/highflyer910/image/upload/${video.image}" alt="Workout Video Image"/>
+                        <img src="${video.image}" alt="Workout Video Image"/>
                     </a>
                 `).join('');
     
