@@ -1,11 +1,24 @@
-import React, { createContext, useState, useEffect, useContext } from 'react';
+import React, {
+  createContext,
+  useState,
+  useEffect,
+  useContext,
+} from 'react';
 
-const ThemeContext = createContext();
+import PropTypes from 'prop-types';
+
+const ThemeContext = createContext({
+  theme: 'dark',
+  toggleTheme: () => {},
+});
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'dark';
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('theme') || 'dark';
+    }
+
+    return 'dark';
   });
 
   useEffect(() => {
@@ -14,7 +27,9 @@ export const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme(prevTheme =>
+      prevTheme === 'dark' ? 'light' : 'dark'
+    );
   };
 
   return (
@@ -24,4 +39,18 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+ThemeProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+
+  if (!context) {
+    throw new Error(
+      'useTheme must be used within ThemeProvider'
+    );
+  }
+
+  return context;
+};
